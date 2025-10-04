@@ -5,11 +5,17 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import DailyReviewScreen from '../screens/DailyReviewScreen';
 import LessonLauncherScreen from '../screens/LessonLauncherScreen';
 import SoundWallScreen from '../screens/SoundWallScreen';
+import Lesson01HomeScreen from '../screens/lesson01/Lesson01HomeScreen';
+import Lesson01RhymeMatchScreen from '../screens/lesson01/Lesson01RhymeMatchScreen';
+import Lesson01WordTapperScreen from '../screens/lesson01/Lesson01WordTapperScreen';
 
 export type RootStackParamList = {
   LessonLauncher: undefined;
   DailyReview: undefined;
   SoundWall: undefined;
+  Lesson01Home: undefined;
+  Lesson01RhymeMatch: undefined;
+  Lesson01WordTapper: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -39,6 +45,21 @@ const AppNavigator: React.FC = () => (
         name="SoundWall"
         component={SoundWallScreen}
         options={{ title: 'Sound Wall' }}
+      />
+      <Stack.Screen
+        name="Lesson01Home"
+        component={Lesson01HomeScreen}
+        options={{ title: 'Lesson 01' }}
+      />
+      <Stack.Screen
+        name="Lesson01RhymeMatch"
+        component={Lesson01RhymeMatchScreen}
+        options={{ title: 'Rhyme Match' }}
+      />
+      <Stack.Screen
+        name="Lesson01WordTapper"
+        component={Lesson01WordTapperScreen}
+        options={{ title: 'Word Tapper' }}
       />
     </Stack.Navigator>
   </NavigationContainer>

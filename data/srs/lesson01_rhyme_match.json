@@ -4,15 +4,15 @@
   "exercise_type": "Rhyme Match",
   "skill_focus": "Rhyme Recognition",
   "prompt": {
-    "audio": "lesson01_rhyme_prompt.m4a",
-    "image": "lesson01_rhyme_cat.png"
+    "audio": "audio_rhymes_with_cat.mp3",
+    "image": "cat.png"
   },
   "response_type": "tap_image",
   "correct_response": "hat",
   "distractors": ["dog", "car"],
   "assets": {
-    "audio": ["lesson01_rhyme_prompt.m4a"],
-    "images": ["lesson01_rhyme_cat.png", "lesson01_rhyme_hat.png", "lesson01_rhyme_dog.png", "lesson01_rhyme_car.png"]
+    "audio": ["audio_rhymes_with_cat.mp3"],
+    "images": ["cat.png", "hat.png", "dog.png", "car.png"]
   },
   "srs_data": {
     "due_date": null,

@@ -5,10 +5,14 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
     "types": ["jest", "detox"],
-    "baseUrl": "./src"
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*", "../*"]
+    }
   },
-  "include": ["src", "App.tsx", "app.config.ts"],
+  "include": ["src", "App.tsx", "app.config.ts", "index.js"],
   "exclude": ["node_modules", "dist"]
 }
