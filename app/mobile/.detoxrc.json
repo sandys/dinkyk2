@@ -1,0 +1,25 @@
+{
+  "testRunner": "jest",
+  "runnerConfig": "./detox.jest.json",
+  "apps": {
+    "ios.release": {
+      "type": "ios.app",
+      "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/DinkyK2.app",
+      "build": "xcodebuild -workspace ios/DinkyK2.xcworkspace -scheme DinkyK2 -configuration Release -sdk iphonesimulator"
+    }
+  },
+  "devices": {
+    "simulator": {
+      "type": "ios.simulator",
+      "device": {
+        "type": "iPad (10th generation)"
+      }
+    }
+  },
+  "configurations": {
+    "ios.release": {
+      "device": "simulator",
+      "app": "ios.release"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "exercise_id": "L1-RhymeMatch-001",
+  "lesson_number": 1,
+  "exercise_type": "Rhyme Match",
+  "skill_focus": "Rhyme Recognition",
+  "prompt": {
+    "audio": "lesson01_rhyme_prompt.m4a",
+    "image": "lesson01_rhyme_cat.png"
+  },
+  "response_type": "tap_image",
+  "correct_response": "hat",
+  "distractors": ["dog", "car"],
+  "assets": {
+    "audio": ["lesson01_rhyme_prompt.m4a"],
+    "images": ["lesson01_rhyme_cat.png", "lesson01_rhyme_hat.png", "lesson01_rhyme_dog.png", "lesson01_rhyme_car.png"]
+  },
+  "srs_data": {
+    "due_date": null,
+    "stability": 0,
+    "difficulty": 0,
+    "review_history": []
+  }
+}

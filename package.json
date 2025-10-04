@@ -1,0 +1,14 @@
+{
+  "name": "dinkyk2-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "app/mobile"
+  ],
+  "scripts": {
+    "lint": "yarn workspace dinkyk2-mobile lint",
+    "test": "yarn workspace dinkyk2-mobile test",
+    "test:e2e": "yarn workspace dinkyk2-mobile test:e2e",
+    "start:mobile": "yarn workspace dinkyk2-mobile start"
+  }
+}

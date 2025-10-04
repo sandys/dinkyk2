@@ -1,0 +1,14 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "types": ["jest", "detox"],
+    "baseUrl": "./src"
+  },
+  "include": ["src", "App.tsx", "app.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
